@@ -2,6 +2,8 @@
 
 Day 1 | اليوم الأول
 
+<img width="822" height="113" alt="Screenshot 2026-11-24 at 10 34 23 AM" src="https://github.com/user-attachments/assets/5c574ef9-c5fe-422f-b88b-c09610745ff1" />
+
 Daily question · Model comparison
 
 **Which model did you select initially, and what is the strongest result supporting your choice?**
