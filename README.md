@@ -8,6 +8,8 @@ Daily question · Model comparison
 
 **Which model did you select initially, and what is the strongest result supporting your choice?**
 
+Initially I chose the XGBoost model, based on the table above. The XGBoost model has the highest Average Precision of all 3 models of (0.3338). Since default events don't occur often, I chose the average precision as my metric of choice to compare how the well models perform and then select the best one that would identify defaults.
+
 Daily answers | الإجابات اليومية
 
 
