@@ -5,7 +5,7 @@ Where each required item lives in this repository. The final self-check notebook
 | Requirement | Location |
 |---|---|
 | Executed notebooks for all five gates | `notebooks/01_baseline_boosting.ipynb` to `notebooks/05_final_model.ipynb` |
-| Whole project in one notebook (README plus every gate, with outputs) | `Tamweel_Lite_Final_Project.ipynb` |
+| Final overview notebook (setup, all figures, final result) | `Tamweel_Lite_Final_Project.ipynb` |
 | Readiness notebook | `notebooks/00_readiness_check.ipynb` |
 | Final self-check notebook | `notebooks/99_final_submission_check.ipynb` |
 | Outputs from the earlier gates (tables, figures, run records) | `evidence/` (one folder per gate) |
