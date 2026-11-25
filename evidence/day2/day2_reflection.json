@@ -1,0 +1,14 @@
+{
+  "responses": {
+    "leak_example": "The 'days_past_due_60' field is a leaked field as this field lets us know whether an applicant was 60 days late on a payment. This information is not available at applictaion time as it happens in the future and becomes avaiable after the application.",
+    "split_reason": "Time ordering is used to seperate the applications and ensure the model learns from past applications and is tested on the newer ones to prevent time-leakage; customer separation was done to prevent the model from knwoing the training customers in the validation stage and making the model untrsutworthy; the strict 90 day maturity rule was becasue we needed the 90 days to know wether the applictaion defaulted within that time period for the trainign data",
+    "observed_gap": "The observed AP gap, leaky minus clean random: 0.6879  does not prove that it is better as it was given all the data past and future and thus no actual wokr was done by the model, and the observed AP gap, clean random minus honest fixed: -0.0044: does not prove universal superiority as they were tested on different groups and different time periods and that is not a fair comparison",
+    "imputer_reason": "Imputation is learned inside training due to the fact that the missing values are filled using the training data only, so the validation data isnt inlfuenced by the model; innner stopping set controls  are used to choose how many trees are selected based on the inner-stop log loss",
+    "limitations": "the OOF -coverage limitation is due to the fact that the OOF predictions cover 5,039 /10,000 applications and the rest of the application doen't a chnace at a fair OOF prediction, as for the search limitation the model had to stick to 8 settings trial limit"
+  },
+  "checkpoint": {
+    "status": "READY_FOR_REVIEW",
+    "missing": [],
+    "automatic_grade": null
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "problem_statement": "We're comparing the models to rank applications by their risk of a default event occuring within 90 days after the application",
+  "candidate": "XGBoost",
+  "notes": {
+    "evidence": "The XGBoost model scored the highest at 0.3338 at the average percision metric which is the metric we are concerned with as the default occuring is a rarity, and that's the metric that catches it, while the logsitic regression was teh fastest and scored the highest in the ROC metric",
+    "limitation": "The random split does not show us how accurately the model will perform on future applicants",
+    "next_test": "Perform a differnt split and check whether the models will perform the same way."
+  },
+  "exit_answers": [
+    "Because AP catches rare of uncommon events and defaults are rare events",
+    "Because we need the model to accurately choose the number of trees and not tune it based on the set and make the scores untrustworthy"
+  ],
+  "checkpoint": {
+    "status": "READY_FOR_REVIEW",
+    "missing": [],
+    "automatic_grade": null
+  }
+}
