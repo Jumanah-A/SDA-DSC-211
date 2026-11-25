@@ -290,8 +290,7 @@ Open the files in `notebooks/`, for example in Google Colab. They contain the sa
 - See `reports/MODEL_CARD.md` for the full model card, including the monitoring plan.
 
 ## Training-program attribution
-
-This project was completed for the SDA-DSC-211 course lab series (Tamweel Lite), using the released course data and support code. Course support files are included unchanged under `scripts/`, `tamweel/` and `presentation/`.
+This project was completed for SDAIA Academy's Advanced Machine Learning program (SDA-DSC-211) with Mrs. Meaad Al-Marri. SDAIA Academy
 
 ## Daily answers | الإجابات اليومية
 
