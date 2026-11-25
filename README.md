@@ -1,4 +1,3 @@
-# SDA-DSC-211
 # Tamweel Lite: Loan-Default Review Model
 
 An end-to-end tabular machine-learning project that ranks synthetic loan applications by 90-day default risk, compares single models with ensembles using leakage-safe forward validation, freezes a cost- and capacity-aware review policy, calibrates the final model, explains it, and exports reproducible challenge predictions.
@@ -9,7 +8,7 @@ An end-to-end tabular machine-learning project that ranks synthetic loan applica
 
 **Contents:** [Overview](#project-overview) · [Key results](#key-results) · [Technical pipeline](#technical-pipeline) · [Figures and explanations](#figures-and-explanations) · [Repository structure](#repository-structure) · [Quick start](#quick-start) · [Limitations](#interpretation-and-limitations) · [Daily answers](#daily-answers--الإجابات-اليومية)
 
-**Full project notebook:** [`Tamweel_Lite_Final_Project.ipynb`](Tamweel_Lite_Final_Project.ipynb) compiles this README and the executed notebooks for every gate into one file.
+**Full project notebook:** [`Tamweel_Lite_Final_Project.ipynb`](Tamweel_Lite_Final_Project.ipynb) is the final overview. Run all cells and it sets up, redraws every figure from the saved outputs, and ends with the final result and submission checks (about a minute, no retraining).
 
 ![Ensemble comparison: mean AP, Brier and ECE](reports/gate5_ensemble_comparison.png)
 
@@ -181,7 +180,7 @@ All 19 figures produced across the five gates, in order. Each one is followed by
 ```text
 Tamweel-Lite/
 ├── README.md
-├── Tamweel_Lite_Final_Project.ipynb   # README + all gate notebooks in one file
+├── Tamweel_Lite_Final_Project.ipynb   # final overview: setup, all figures, final result
 ├── PROJECT_README.md
 ├── requirements.txt
 ├── requirements-colab.txt
@@ -265,9 +264,9 @@ python tamweel/inference.py --input data/tamweel_challenge.csv --output predicti
 
 The command returns application IDs and calibrated probabilities only. Apply the frozen threshold and the 12% capacity cap to the complete batch afterwards, as described in `artifacts/final_policy.json`.
 
-### 5. Read the executed notebooks
+### 5. Run the final overview notebook
 
-Open the files in `notebooks/`, for example in Google Colab. They contain the saved outputs of the completed runs.
+Open `Tamweel_Lite_Final_Project.ipynb` (for example in Google Colab) and choose Run all. It redraws every figure from the saved outputs and finishes with the final result and submission checks. The lab notebooks in `notebooks/` contain the saved outputs of the individual runs.
 
 ## Dataset and model
 
